@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#26ade0"
+    android:gravity="center"
+    android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:paddingBottom="16dp"
     tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/askbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:background="#3F51B5"
+        android:contentDescription="@string/text"
+        android:text="@string/text"
+        android:textColor="@android:color/background_light"
+        tools:text="@string/text" />
+
+    <ImageView
+        android:id="@+id/image_eightBall"
+        android:layout_width="312dp"
+        android:layout_height="225dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/ball1" />
+
+    <TextView
+        android:id="@+id/mytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/mytext"
+        android:fontFamily="@font/assistant_bold"
+        android:text="@string/mytext"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:text="@string/mytext" />
+
 </RelativeLayout>
